@@ -6,7 +6,7 @@ LABEL MAINTAINER=nigelpoulton@hotmail.com
 COPY . /src
 
 # Install app and dependencies into /src in container
-RUN cd /src; npm install
+RUN cd /src && npm install
 
 # Document the port the app listens on
 EXPOSE 8080
